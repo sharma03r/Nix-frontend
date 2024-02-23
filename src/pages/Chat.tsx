@@ -55,6 +55,7 @@ const Chat = () => {
           toast.success("Successfully loaded chats", { id: "loadchats" });
         })
         .catch((error) => {
+          console.log(error);
           toast.error("Error loading chats", { id: "loadchats" });
         });
     }
