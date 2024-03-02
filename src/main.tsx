@@ -8,7 +8,7 @@ import { AuthProvider } from "./context/authContext.tsx";
 import { Toaster } from "react-hot-toast";
 import axios from "axios";
 
-axios.defaults.baseURL = "https://tasty-lime-piglet.cyclic.app/api/v1";
+axios.defaults.baseURL = "http://43.204.221.240:8000/api/v1";
 axios.defaults.withCredentials = true;
 const theme = createTheme({
   typography: {
