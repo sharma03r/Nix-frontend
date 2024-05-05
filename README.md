@@ -1,30 +1,45 @@
-# React + TypeScript + Vite
+# Assistant using OpenAI API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is an Assistant application developed using the OpenAI API. It provides advanced chat functionalities similar to ChatGPT, with a robust backend service built using Express.js, Node.js, and MongoDB. This repo only contains the code for the frontend part. Use the backedn repo to setup the backend server.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Backend Service:**
+  - Developed a ChatGPT backend service using Express.js and Node.js.
+  - Implemented user authentication and authorization using JWT tokens and HTTP-only cookies for secure user access and data protection.
+  - Utilized MongoDB for storing user chats, sessions, and managing user accounts.
+  - Integrated express-validators middleware to ensure data integrity and prevent potential security vulnerabilities.
 
-## Expanding the ESLint configuration
+- **OpenAI Integration:**
+  - Integrated OpenAI API to enable advanced chat functionalities, providing users with conversational interactions.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Getting Started
 
-- Configure the top-level `parserOptions` property like this:
+### Prerequisites:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+- Node.js and npm installed on your machine.
+- MongoDB database instance running.
+
+### Installation:
+
+1. Clone this repository.
+2. Install dependencies:
+
+```bash
+npm install
 ```
+3. Set up environment variables (e.g., MongoDB connection URI, JWT secret key).
+4. Start the server:
+```bash
+npm run dev
+```
+5. The server will start running on port 5173.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Images:
+- ![image](https://github.com/sharma03r/Nix-frontend/assets/44360511/7bae0ffb-6d53-4f56-b7d2-4aec1d171e4a)
+- HomePage:
+  - ![image](https://github.com/sharma03r/Nix-frontend/assets/44360511/fe7e46bc-f5f7-4606-a614-66e16286def5)
+- Login Page:
+  - ![image](https://github.com/sharma03r/Nix-frontend/assets/44360511/9fd47fef-05b3-46a8-a345-5c35f1ba1967)
+
+
